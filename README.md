@@ -15,9 +15,14 @@ El Huevontador te ofrece una interfaz sencilla e intuitiva donde puedes:
 
 **¿Cómo ejecutarlo?**
 
+***Puedes ejecutarlo directamente abriendo el archivo `Start-electron.bat`***
+
 1.  Asegúrate de tener **Node.js** y **npm** (o **yarn**) instalados en tu sistema. Electron utiliza Node.js en su núcleo.
+
+o tambien puedes:
+   
 2.  Abre una **terminal** o **símbolo del sistema** en la raíz del directorio del proyecto (donde se encuentra el archivo `package.json` y el `start-electron.bat`).
-3.  Ejecuta el siguiente comando:
+4.  Ejecuta el siguiente comando:
 
     ```bash
     ./start-electron.bat
