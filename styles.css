@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+  background-image: url("images/fondo.png");
+  font-family: 'Pixelify Sans', sans-serif;
+  text-align: center;
+  color: #333;
+  user-select: none;
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff1a4;
+  height: 64px;
+  padding: 0px 10px;
+  -webkit-app-region: drag;
+}
+
+.window-buttons {
+  display: flex;
+  gap: 8px;
+  -webkit-app-region: no-drag;
+  align-items: end;
+}
+
+.window-buttons img {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+  cursor: pointer;
+}
+
+.window-buttons img:hover {
+  background-color: #ffcc00;
+  border-radius: 3px;
+}
+
+.egg-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.egg-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.egg-card img {
+  width: 100px;
+  height: auto;
+  image-rendering: pixelated;
+  cursor: pointer;
+  border: 2px solid #ffcc0000;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.egg-card img:hover {
+  background-color: #ffca8560;
+}
+
+.egg-label {
+  margin-top: 20px;
+  font-size: 15px;
+  pointer-events: none;
+  color: #333;
+}
+
+#process-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#process-gif {
+  width: 150px;
+  height: auto;
+  image-rendering: pixelated;
+}

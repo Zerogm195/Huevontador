@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huevontador <3</title>
+    <link rel="stylesheet" href="styles2.css">
+    <audio src="images/schooldelta.mp3" autoplay loop></audio>
+
+</head>
+<body>
+
+    <div class="title-bar">
+    <div class="drag-region"></div>
+    <div class="window-buttons">
+      <img id="minimize-btn" src="images/_.png" alt="Minimize">
+      <img id="maximize-btn" src="images/maxmin.png" alt="Maximize">
+      <img id="close-btn" src="images/X.png" alt="Close">
+    </div>
+  </div>
+
+    <h1 class="title">¡Bienvenido/a!</h1>
+
+    <a href="index.html"><button class="boton">¡Pulse aqui para comenzar!</button></a>
+     <script src="index2.js"></script>
+    
+
+     <script>
+    document.getElementById('minimize-btn').addEventListener('click', () => {
+      window.electronAPI.windowControl('minimize')
+    })
+    document.getElementById('maximize-btn').addEventListener('click', () => {
+      window.electronAPI.windowControl('maximize')
+    })
+    document.getElementById('close-btn').addEventListener('click', () => {
+      window.electronAPI.windowControl('close')
+    })
+  </script>
+
+</body>
+</html>

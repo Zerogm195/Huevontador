@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Huevontador <3</title>
+  <link rel="stylesheet" href="styles.css">
+  <audio src="images/schooldelta.mp3" autoplay loop></audio>
+
+</head>
+<body>
+
+  <div class="title-bar">
+
+    <div class="drag-region">
+
+    </div>
+    <div class="window-buttons">
+
+      <img id="minimize-btn" src="images/_.png" alt="Minimize">
+      <img id="maximize-btn" src="images/maxmin.png" alt="Maximize">
+      <img id="close-btn" src="images/X.png" alt="Close">
+    
+    </div>
+
+  </div>
+
+
+  <h1 id="main-title">¿Qué vas a hacer hoy? >u< </h1>
+
+  <div class="egg-grid">
+    <div class="egg-card">
+      <img onclick="yema1()" src="images/egg_soft1.png" alt="Yema blanda" >
+      <h2 class="egg-label">Yema blanda</h2>
+    </div>
+    <div class="egg-card">
+      <img onclick="yema2()" src="images/egg_soft.png" alt="Yema media">
+      <h2 class="egg-label">Yema media</h2>
+    </div>
+    <div class="egg-card">
+      <img onclick="yema3()" src="images/egg_soft2.png" alt="Yema media/alta">
+      <h2 class="egg-label">Yema media/alta</h2>
+    </div>
+    <div class="egg-card">
+      <img onclick="yema4()" src="images/egg_soft3.png" alt="Yema dura">
+      <h2 class="egg-label">Yema dura</h2>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('minimize-btn').addEventListener('click', () => {
+      window.electronAPI.windowControl('minimize')
+    })
+    document.getElementById('maximize-btn').addEventListener('click', () => {
+      window.electronAPI.windowControl('maximize')
+    })
+    document.getElementById('close-btn').addEventListener('click', () => {
+      window.electronAPI.windowControl('close')
+    })
+  </script>
+
+  <script src="index.js"></script>
+  <script src="yemas.js"></script>
+
+</body>
+</html>
