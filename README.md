@@ -13,6 +13,26 @@ El Huevontador te ofrece una interfaz sencilla e intuitiva donde puedes:
 * **Recibir notificaciones:** Configura alertas para saber cuándo tu huevo está en el punto exacto.
 * **Interfaz amigable:** Disfruta de un diseño limpio y fácil de usar en tu escritorio gracias a Electron.
 
+**¿Cómo ejecutarlo?**
+
+1.  Asegúrate de tener **Node.js** y **npm** (o **yarn**) instalados en tu sistema. Electron utiliza Node.js en su núcleo.
+2.  Abre una **terminal** o **símbolo del sistema** en la raíz del directorio del proyecto (donde se encuentra el archivo `package.json` y el `start-electron.bat`).
+3.  Ejecuta el siguiente comando:
+
+    ```bash
+    ./start-electron.bat
+    ```
+
+    Este script ejecutará internamente el comando `npx electron .`, que se encarga de iniciar la aplicación Electron utilizando el punto (`.`) para indicar el directorio actual como la ubicación de tu aplicación principal.
+
+**¿Qué hace `npx electron .`?**
+
+* **`npx`:** Es una herramienta de ejecución de paquetes de npm. Te permite ejecutar paquetes (como `electron`) sin necesidad de instalarlos globalmente.
+* **`electron`:** Es el ejecutable de Electron que permite correr tu aplicación web como una aplicación de escritorio.
+* **`.`:** Indica que el punto de entrada principal de tu aplicación Electron (definido usualmente en tu archivo `main.js`) se encuentra en el directorio actual.
+
+Con este sencillo script, podrás poner en marcha el Huevontador de forma rápida y cómoda.
+
 ## Tecnologías Utilizadas 💻
 
 * **HTML:** Para la estructura de la interfaz de usuario.
